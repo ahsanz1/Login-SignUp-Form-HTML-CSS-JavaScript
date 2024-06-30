@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Login, Signup & Password Reset Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form signInForm">
+        <h2>Sign In</h2>
+        <form id="loginForm">
+          <div class="inputBox">
+            <input type="text" required="required" id="loginUsername" />
+            <span>Username</span>
+          </div>
+          <div class="inputBox">
+            <input type="password" required="required" id="loginPassword" />
+            <span>Password</span>
+          </div>
+          <div class="links">
+            <a href="#" class="forgotPassword">Forgot Password?</a>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Login</span>
+            <svg
+              class="tick-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+          </button>
+        </form>
+        <p class="toggleForm" data-target="signUp">
+          Don't have an account? Sign Up
+        </p>
+      </div>
+
+      <div class="form signUpForm inactive">
+        <h2>Sign Up</h2>
+        <form id="signUpForm">
+          <div class="inputBox">
+            <input type="text" required="required" id="signUpUsername" />
+            <span>Username</span>
+          </div>
+          <div class="inputBox">
+            <input type="email" required="required" id="signUpEmail" />
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <input type="password" required="required" id="signUpPassword" />
+            <span>Password</span>
+          </div>
+          <div class="inputBox">
+            <input
+              type="password"
+              required="required"
+              id="signUpConfirmPassword"
+            />
+            <span>Confirm Password</span>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Sign Up</span>
+            <svg
+              class="tick-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+          </button>
+        </form>
+        <p class="toggleForm" data-target="signIn">
+          Already have an account? Sign In
+        </p>
+      </div>
+
+      <div class="form forgotPasswordForm inactive">
+        <h2>Reset Password</h2>
+        <form id="resetPasswordForm">
+          <div class="inputBox">
+            <input type="email" required="required" id="resetEmail" />
+            <span>Email</span>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Reset Password</span>
+            <svg
+              class="tick-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+          </button>
+        </form>
+        <p class="toggleForm" data-target="signIn">
+          Remember your password? Sign In
+        </p>
+      </div>
+    </div>
+    <script src="forms.js"></script>
+  </body>
+</html>
